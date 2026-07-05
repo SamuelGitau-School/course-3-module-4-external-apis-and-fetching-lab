@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Alerts App</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Weather Alerts</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Weather Alerts App</h1>
-  <input type="text" id="state-input" placeholder="Enter state abbreviation">
-  <button id="fetch-alerts">Get Weather Alerts</button>
-  <div id="alerts-display"></div>
+  
+  <input type="text" id="city-input" placeholder="Enter state abbreviation">
+  <button id="fetch-weather">Get Weather Alerts</button>
+  
+  <div id="loading-spinner">
+    <div class="spinner"></div> </div>
+
+  <div id="weather-display"></div>
   <div id="error-message" class="hidden"></div>
-  <script src="./index.js"></script>
+
+  <script src="index.js"></script>
 </body>
 </html>
